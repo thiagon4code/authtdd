@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  nodeauth:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: nodeauth
+    ports:
+      - "5432:5432"
